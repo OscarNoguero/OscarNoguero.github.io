@@ -681,10 +681,30 @@ footer p {
 
     .nav-links {
         display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--bg-card);
+        flex-direction: column;
+        padding: 2rem;
+        border-bottom: 2px solid var(--border);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .mobile-menu-btn {
         display: block;
+    }
+
+    .mobile-menu-btn.active {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
     }
 
     .projects-grid {
